@@ -1,0 +1,152 @@
+{
+  "owner": "mario-andreschak",
+  "header": {
+    "name": "Mario\nAndreschak",
+    "line": "I connect AI to things it was never meant to touch.",
+    "sub": "Creator of FLUJO.",
+    "alt": "Mario Andreschak. I connect AI to things it was never meant to touch. Creator of FLUJO.",
+    "graph": { "center": "AI", "left": ["SAP", "Windows"], "right": ["Word", "Cameras", "Game Boy"] }
+  },
+  "links": [
+    ["FLUJO", "https://github.com/mario-andreschak/FLUJO"],
+    ["flujo.com.co", "https://flujo.com.co/"],
+    ["Discord", "https://discord.gg/KPyrjTSSat"],
+    ["LinkedIn", "https://www.linkedin.com/in/mario-andreschak-674033299/"],
+    ["More projects on flujo-app", "https://github.com/flujo-app"]
+  ],
+  "sections": [
+    {
+      "id": "building",
+      "title": "What I'm building",
+      "line": "An open-source home for AI agents.",
+      "blocks": [
+        ["flujo", "factory", "brain"]
+      ]
+    },
+    {
+      "id": "sap",
+      "title": "AI meets SAP",
+      "line": "Tools that let AI work inside SAP.",
+      "row": ["abap-api", "abap-adt", "sap-gui"],
+      "stars": true
+    },
+    {
+      "id": "desktop",
+      "title": "AI on your desktop",
+      "line": "A mouse, a keyboard and Microsoft Word.",
+      "row": ["windows-automation", "word", "essentials"],
+      "stars": true
+    },
+    {
+      "id": "senses",
+      "title": "Eyes, ears and a Game Boy",
+      "line": "First it needed to see. Then it needed to play.",
+      "blocks": [
+        ["gameboy", "image-recognition", "video-recognition"]
+      ]
+    },
+    {
+      "id": "fun",
+      "title": "And then there's this",
+      "line": "Science nobody asked for.",
+      "wide": "fruit-fly"
+    }
+  ],
+  "also": [
+    ["mcp-veo2", "https://github.com/mario-andreschak/mcp-veo2", "makes videos with Google Veo and images with Gemini"],
+    ["hotswap-mcp-bridge", "https://github.com/mario-andreschak/hotswap-mcp-bridge", "swaps AI tools without dropping a request"],
+    ["docs-sap-abap", "https://github.com/mario-andreschak/docs-sap-abap-automated-documentation-prompts", "prompts that write SAP documentation for you"],
+    ["Savia", "https://github.com/mario-andreschak/factored-hackathon-2026-mcg", "our Factored Hackathon 2026 entry"]
+  ],
+  "projects": {
+    "flujo": {
+      "name": "FLUJO",
+      "url": "https://github.com/mario-andreschak/FLUJO",
+      "line": "Build private AI agents visually. Then talk to them, automate them, or call them from other software.",
+      "shot": "flujo.jpg",
+      "pos": "0% 0%"
+    },
+    "factory": {
+      "name": "FACTORY",
+      "url": "https://github.com/flujo-app/FACTORY",
+      "line": "A reusable swarm engine for your app. Bring your own AI subscription, or host your own models.",
+      "art": "factory"
+    },
+    "brain": {
+      "name": "brain",
+      "url": "https://github.com/flujo-app/brain",
+      "line": "Your agents as a living 3D brain. Watch every thought fire in real time.",
+      "shot": "brain.jpg",
+      "pos": "42% 50%",
+      "zoom": 1.45
+    },
+    "abap-api": {
+      "name": "mcp-abap-abap-adt-api",
+      "repo": "mcp-abap-abap-adt-api",
+      "url": "https://github.com/mario-andreschak/mcp-abap-abap-adt-api",
+      "line": "127 tools to write, activate and debug ABAP code.",
+      "art": "abapapi"
+    },
+    "abap-adt": {
+      "name": "mcp-abap-adt",
+      "repo": "mcp-abap-adt",
+      "url": "https://github.com/mario-andreschak/mcp-abap-adt",
+      "line": "Lets an AI read code straight out of an SAP system.",
+      "art": "abap"
+    },
+    "sap-gui": {
+      "name": "mcp-sap-gui",
+      "repo": "mcp-sap-gui",
+      "url": "https://github.com/mario-andreschak/mcp-sap-gui",
+      "line": "Lets an AI click and type its way through SAP GUI.",
+      "art": "sapgui"
+    },
+    "windows-automation": {
+      "name": "mcp-windows-automation",
+      "repo": "mcp-windows-desktop-automation",
+      "url": "https://github.com/mario-andreschak/mcp-windows-desktop-automation",
+      "line": "Lets an AI drive Windows apps with mouse and keyboard.",
+      "art": "windows"
+    },
+    "word": {
+      "name": "mcp-office-word",
+      "repo": "mcp-msoffice-interop-word",
+      "url": "https://github.com/mario-andreschak/mcp-msoffice-interop-word",
+      "line": "Lets an AI write and edit real Word documents.",
+      "art": "word"
+    },
+    "essentials": {
+      "name": "mcp-essentials-windows",
+      "repo": "mcp-essentials-windows",
+      "url": "https://github.com/mario-andreschak/mcp-essentials-windows",
+      "line": "Files, commands and screen capture for AI on Windows.",
+      "art": "essentials"
+    },
+    "gameboy": {
+      "name": "mcp-gameboy",
+      "url": "https://github.com/mario-andreschak/mcp-gameboy",
+      "line": "An AI plays a Game Boy. It loads the game, presses the buttons and watches the screen.",
+      "art": "gameboy"
+    },
+    "image-recognition": {
+      "name": "mcp-image-recognition",
+      "url": "https://github.com/mario-andreschak/mcp-image-recognition",
+      "line": "Lets an AI look at pictures and read the text in them.",
+      "art": "image"
+    },
+    "video-recognition": {
+      "name": "mcp-video-recognition",
+      "url": "https://github.com/mario-andreschak/mcp_video_recognition",
+      "line": "Describes images, transcribes audio and summarizes video from your own files.",
+      "art": "video2"
+    },
+    "fruit-fly": {
+      "name": "ai-fruit-fly",
+      "url": "https://github.com/flujo-app/ai-fruit-fly",
+      "line": "A real fruit fly brain, all 138,639 neurons, running in your browser. Then 1,024 flies learned to code a rotating döner.",
+      "note": "Brain map: FlyWire, CC BY-NC 4.0",
+      "shot": "fruit-fly.jpg",
+      "pos": "50% 60%"
+    }
+  }
+}
