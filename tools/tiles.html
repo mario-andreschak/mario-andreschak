@@ -133,6 +133,16 @@ const ART = {
     const chip=(n,i)=>{const x=44+(i%4)*192,y=62+Math.floor(i/4)*134,c=i%3===0?'var(--cyan)':'var(--violet)';return `<rect x="${x}" y="${y}" width="176" height="112" rx="16" fill="var(--card)" stroke="${c}" stroke-width="3"/><text x="${x+88}" y="${y+68}" text-anchor="middle" font-size="30" font-weight="600" fill="var(--ink)">${n}</text>`;};
     return `<svg viewBox="0 0 840 378" preserveAspectRatio="xMidYMid slice">${names.map(chip).join('')}</svg>`;
   },
+  // Chat: a conversation where the AI answers.
+  chat: () => {
+    const bubble=(x,y,w,mine,lines)=>`<rect x="${x}" y="${y}" width="${w}" height="${30+lines*30}" rx="22" fill="${mine?'color-mix(in srgb, var(--violet) 22%, var(--card))':'var(--card)'}" stroke="${mine?'var(--violet)':'var(--line)'}" stroke-width="2.5"/>`+Array.from({length:lines},(_,i)=>`<rect x="${x+24}" y="${y+24+i*30}" width="${w-48-(i===lines-1?60:0)}" height="12" rx="6" fill="${mine?'var(--violet)':'var(--faint)'}" opacity="${mine?.75:.6}"/>`).join('');
+    return `<svg viewBox="0 0 840 378" preserveAspectRatio="xMidYMid slice">
+      <rect x="230" y="20" width="380" height="420" rx="40" fill="var(--bg)" stroke="var(--line)" stroke-width="3"/>
+      ${bubble(258,58,250,false,2)}${bubble(332,152,250,true,2)}${bubble(258,246,210,false,1)}
+      <rect x="512" y="216" width="72" height="46" rx="12" fill="#0a8ba1"/><text x="548" y="249" text-anchor="middle" font-size="28" font-weight="600" fill="#fff">AI</text>
+      <rect x="258" y="318" width="324" height="44" rx="22" fill="var(--card)" stroke="var(--line)" stroke-width="2.5"/>
+    </svg>`;
+  },
   // Word: a page being written.
   word: () => {
     const bar=(y,w,c='var(--line)')=>`<rect x="252" y="${y}" width="${w}" height="14" rx="7" fill="${c}"/>`;
