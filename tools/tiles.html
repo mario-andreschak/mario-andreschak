@@ -50,6 +50,11 @@
   .wide h3 { margin: 0; font-size: 92px; letter-spacing: -.045em; line-height: 1; font-weight: 650; }
   .wide p { margin: 26px 0 0; font-size: 38px; line-height: 1.28; color: #cdd0ee; }
   .wide small { display: block; margin-top: 22px; font-size: 24px; color: #9095bb; }
+  /* A picture that keeps its shape on the right; the text gets the dark left. */
+  .wide.side { background: #080916; }
+  .wide.side img { left: auto; width: auto; }
+  .wide.side .shade { background: linear-gradient(90deg, #080916 0%, #080916 37.6%, rgba(8,9,22,0) 42%); }
+  .wide.side .text { width: 590px; }
 
   /* Section title: a wire with a node on it, like a step in a flow. */
   .section { width: 1760px; height: 190px; position: relative; }
@@ -269,7 +274,7 @@ window.render = async s => {
     stage.innerHTML = `<div class="${t} section"><div class="node">${s.num}</div><h2>${esc(s.title)}</h2><div class="say">${esc(s.line)}</div><div class="wire"></div></div>`;
   } else if (s.kind === 'wide') {
     const p = s.p;
-    stage.innerHTML = `<div class="${t} wide"><img src="../assets/shots/${p.shot}" style="object-position:${p.pos}"><div class="shade"></div><div class="text"><h3>${esc(p.name)}</h3><p>${esc(p.line)}</p><small>${esc(p.note||'')}</small></div></div>`;
+    stage.innerHTML = `<div class="${t} wide${p.side ? ' side' : ''}"><img src="../assets/shots/${p.shot}" style="object-position:${p.pos||'50% 50%'}"><div class="shade"></div><div class="text"><h3>${esc(p.name)}</h3><p>${esc(p.line)}</p><small>${esc(p.note||'')}</small></div></div>`;
   } else {
     const p = s.p;
     const fit = s.kind === 'tall' && p.name.length > 14 ? ' style="font-size:64px"' : '';

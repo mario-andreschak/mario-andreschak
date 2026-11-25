@@ -91,7 +91,10 @@
       "id": "fun",
       "title": "And then there's this",
       "line": "Science nobody asked for.",
-      "wide": "fruit-fly"
+      "wide": [
+        "fruit-fly",
+        "gravity-in-lean"
+      ]
     }
   ],
   "also": [
@@ -205,6 +208,14 @@
       "url": "https://github.com/mario-andreschak/mcp-whatsapp-web",
       "line": "Lets an AI read and send your WhatsApp messages. Based on whatsapp-mcp.",
       "art": "chat"
+    },
+    "gravity-in-lean": {
+      "name": "Gravity in Lean",
+      "url": "https://github.com/flujo-app/gravity-in-lean",
+      "line": "Fly around a heavy mass, watch clocks slow and light bend. Then a proof checker confirms the formulas, piece by piece.",
+      "note": "Fly it: flujo-app.github.io/gravity-in-lean",
+      "shot": "gravity-in-lean.jpg",
+      "side": true
     }
   }
 }

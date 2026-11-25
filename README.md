@@ -49,6 +49,8 @@
 
 <a href="https://github.com/flujo-app/ai-fruit-fly"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tiles/fruit-fly-dark.webp"><img src="assets/tiles/fruit-fly-light.webp" alt="ai-fruit-fly: A real fruit fly brain, all 138,639 neurons, running in your browser. Then 1,024 flies learned to code a rotating döner." width="100%"></picture></a>
 
+<a href="https://github.com/flujo-app/gravity-in-lean"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tiles/gravity-in-lean-dark.webp"><img src="assets/tiles/gravity-in-lean-light.webp" alt="Gravity in Lean: Fly around a heavy mass, watch clocks slow and light bend. Then a proof checker confirms the formulas, piece by piece." width="100%"></picture></a>
+
 <br>
 
 <sub>Also: <a href="https://github.com/mario-andreschak/mcp-essentials-windows">mcp-essentials-windows</a>, files, commands and screen capture for AI on Windows · <a href="https://github.com/mario-andreschak/mcp-veo2">mcp-veo2</a>, makes videos with Google Veo and images with Gemini · <a href="https://github.com/mario-andreschak/hotswap-mcp-bridge">hotswap-mcp-bridge</a>, swaps AI tools without dropping a request · <a href="https://github.com/mario-andreschak/docs-sap-abap-automated-documentation-prompts">docs-sap-abap</a>, prompts that write SAP documentation for you.</sub>
