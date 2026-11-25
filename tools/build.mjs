@@ -42,7 +42,7 @@ for (const s of data.sections) {
     await draw(b, { kind: 'small', p: P[b] });
   }
   for (const id of s.row || []) await draw(id, { kind: 'third', p: P[id] });
-  if (s.wide) await draw(s.wide, { kind: 'wide', p: P[s.wide] });
+  for (const id of [].concat(s.wide || [])) await draw(id, { kind: 'wide', p: P[id] });
 }
 await browser.close();
 
@@ -75,7 +75,7 @@ for (const s of data.sections) {
   parts.push('', '<br>', '', themed(`s-${s.id}`, `${s.title}. ${s.line}`), '');
   if (s.blocks) parts.push(bento(s.blocks), '');
   if (s.row) parts.push(row(s.row, s.stars), '');
-  if (s.wide) parts.push(`<a href="${P[s.wide].url}">${themed(s.wide, `${P[s.wide].name}: ${P[s.wide].line}`)}</a>`, '');
+  for (const id of [].concat(s.wide || [])) parts.push(`<a href="${P[id].url}">${themed(id, `${P[id].name}: ${P[id].line}`)}</a>`, '');
 }
 parts.push('<br>', '', `<sub>Also: ${data.also.map(([t, u, d]) => `<a href="${u}">${t}</a>, ${d}`).join(' · ')}.</sub>`, '');
 fs.writeFileSync(path.join(root, 'README.md'), parts.join('\n'));
